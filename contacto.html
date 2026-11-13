@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h3> SOLICITUD DE VISITA AL CENTRO ARIA: </h3>
+            <fieldset>
+                <legend> DATOS DE CONCTACTO: </legend>
+
+                <label for="nombre"> Nombre: </label>
+                <input type="name" id="nombre">
+
+                <label for="apellidos"> Apellidos: </label>
+                <input type="surname" id="apellidos">
+
+                <br> <label for="correo"> Correo: </label>
+                <input type="email" id="correo">
+
+                <label for="dni"> DNI: </label>
+                <input for="identification" id="dni">
+            </fieldset>
+            <fieldset>
+                <legend> DATOS DE LA VISITA: </legend>
+
+                <br> <label for="acompaniante"> Número de acompañantes: </label>
+                <input type="number" min="0" max="5">
+                
+                <p> Turno de preferencia: </p>
+                <input type="radio" name="horario" value="mañana"> Turno matutino
+                <input type="radio" name="horario" value="tarde"> Turno de tarde
+                <br>
+
+                <label for="fecha"> Hora de la visita:  </label>
+                <input type="date" id="fecha" name="fecha">
+
+                </select>
+                
+                <br> <label for="ciclo"> Ciclo Formativo de interes: </label>
+                <select id="ciclo" name="ciclo">
+
+                    <option value="ciclo">DAM</option>
+                    <option value="ciclo">DAW</option>
+                    <option value="ciclo">ASIR</option>
+                
+                </select>
+
+                <br> <label for="mensaje">Mensaje que añadir antes de la visita: </label>
+                <br> <textarea id="mensaje"></textarea> 
+                
+            </fieldset>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            <br>
+            <p> Alcalde de Córdoba visitando el centro: </p>
+            <video width="640" height="360" controls>
+            <source src="AlcaldeCordoba.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+            </video>
+
+
+        </main>
+        <footer>
+            <!-- a) Diferencias sintácticas entre HTML y XHTML:
+            - En XHTML todas las etiquetas se tienen que cerrar, mientras que en HTML algunas pueden quedar abiertas. 
+            - Los nombres de las etiquetas y atributos deben escribirse siempre en minúsculas.
+            - Los atributos deben llevar siempre comillas y tener un valor.
+            - Los elementos deben estar correctamente anidados.
+
+            b) Utilidad de XHTML en los sistemas de gestión de información:
+            Permite crear documentos web con una estructura más estricta y ordenada,
+            facilitando su procesamiento, validación e intercambio de información
+            entre diferentes sistemas. -->
+        </footer>
+    </body>
+    </html>
